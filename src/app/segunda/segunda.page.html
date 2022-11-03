@@ -1,0 +1,46 @@
+
+
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title class="p">  RegistrAPP
+    </ion-title>
+    <ion-buttons class="l" slot="start" > 
+      <ion-back-button defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <div class="centrado">
+    <br>
+    <br>
+    <br>
+    <center><img src="assets/icon/Duoc.png"></center>
+    <br>
+    <br>
+    <br>
+  <ion-button  [routerLink]="['/qr']" color="success"> Generar QR</ion-button>
+  <br>
+  <ion-button  [routerLink]="['/asistencia']" color="success"> Asistencia</ion-button>
+
+
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button [routerLink]="['/home']"><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

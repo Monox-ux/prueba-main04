@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title class="p">Reestablecer</ion-title>
+    <ion-buttons class="l" slot="start" > 
+      <ion-back-button defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="centrado">
+    
+  <br>
+  <br>
+  <br>
+  <center><img src="assets/icon/Duoc.png"></center>
+  <br>
+  <br>
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Ingrese su usuario</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <ion-button class="p" (click)="presentAlert()">Recuperar  
+    <ion-icon name="mail-unread-outline"></ion-icon>
+  </ion-button>
+ 
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button [routerLink]="['/home']"><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

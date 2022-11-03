@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons class="l" slot="start" > 
+      <ion-back-button defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="o"><h5>Asignaturas</h5></ion-title>
+    <ion-icon name="person-sharp" slot="end" class="p"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngFor="let persona of personas">
+    <ion-label [routerLink]="['/camara']" ><h6>{{persona.nombre}}</h6></ion-label> 
+    <!--<ion-label >{{persona.asistencia}}</ion-label>-->
+  </ion-item>
+
+  
+
+
+
+</ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="mycolor">
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-footer>

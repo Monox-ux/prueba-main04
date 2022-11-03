@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+  <ion-title class="p">inicio</ion-title>
+  
+    <ion-buttons class="l" slot="start" > 
+      <ion-back-button defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+  </ion-header>
+
+<ion-content>
+
+  <br>
+  <br>
+  <br>
+  <center><img src="assets/icon/Duoc.png"></center>
+  <br>
+  <br>
+  <br>
+
+  <div class="centrado">
+
+  <ion-button  [routerLink]="['/docente']" color="success">Docente</ion-button>
+  <ion-button  [routerLink]="['/alumno']" color="success">Alumno</ion-button>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>
