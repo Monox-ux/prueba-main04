@@ -15,6 +15,8 @@ import { AlertController } from '@ionic/angular';
 export class LoginPage implements OnInit {
 
   formularioLogin: FormGroup;
+  permissions: boolean;
+  usuario: string;
 
   constructor(public fb: FormBuilder,
     public alertController: AlertController) { 
@@ -27,6 +29,7 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {
+    this.permissions = true;
   }
 
   async ingresar(){
